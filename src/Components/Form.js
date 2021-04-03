@@ -23,9 +23,10 @@ const Form = ({lang}) => {
       setFormSending(true)
       axios({
         method: "post",
-        url: `${process.env.REACT_APP_API}`,
-        headers: { "content-type": "application/json" },
-        data: formData,
+        // url: `${process.env.REACT_APP_API}`,
+        url: `/aref-cv/api/index.php`,
+        headers: { "Content-Type": "application/json" },
+        data: JSON.stringify(formData),
       })
         .then((result) => {
           if (result.data.sent) {
@@ -38,7 +39,7 @@ const Form = ({lang}) => {
           }
         })
         .catch((error) => {
-          setError(error.message)
+          setError(error.message);
           setFormSending(false);
         });
     } else {

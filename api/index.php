@@ -4,10 +4,12 @@ include_once('sendmail.php');
 
 header("Access-Control-Allow-Origin: *");
 header('Access-Control-Allow-Headers: Content-Type');
-$rest_json = file_get_contents("php://input");
-$_POST = json_decode($rest_json, true);
+header('Content-type: application/json');
 
-if( empty($_POST['fullName']) && empty($_POST['email']) ) {
+$rest_json = file_get_contents("php://input");
+$form_data = json_decode($rest_json, true);
+
+if( empty($form_data['fullName']) && empty($form_data['email']) ) {
   echo json_encode(
       [
          "sent" => false,
@@ -24,12 +26,10 @@ function test_input($data) {
   return $data;
 }
 
-if ($_POST){
-  //@important: Please change this before using
-  http_response_code(200);
-  $fullname = test_input($_POST["fullName"]);
-  $message = test_input($_POST['message']); 
-  $from = test_input($_POST['email']);
+if ($form_data){
+  $fullname = test_input($form_data["fullName"]);
+  $message = test_input($form_data['message']); 
+  $from = test_input($form_data['email']);
  
   //Actual sending email
   Sender($adminEmail, $from, $message, $fullname);

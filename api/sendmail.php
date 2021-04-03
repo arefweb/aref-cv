@@ -11,8 +11,11 @@
       ."Email: ".$sendFrom." \n\n "
       ."/**** Message ****/". " \n "
       .$sendMessage;
-      $headers = "From: Aref PC ".$sendFrom;
+      $headers = "From: ArefWeb";
 
-      mail($to, $subject, $message, $headers);
-      echo json_encode(array("sent" => true));
+      if(mail($to, $subject, $message, $headers)){
+        echo json_encode(array("sent" => true ));
+      } else {
+        echo json_encode(array("sent" => false));
+      }
   }
