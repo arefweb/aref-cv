@@ -6,6 +6,7 @@ import Skills from "./Components/Skills";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";
+import Portfolio from "./Components/Portfolio"
 
 const initialStore = {
   lang: 'english',
@@ -25,6 +26,7 @@ function App() {
         <Header />
         <About />
         <Skills />
+        <Portfolio />
         <Contact />
       </Provider>
     </main>

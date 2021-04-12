@@ -84,7 +84,11 @@ const Navbar = ({ lang }) => {
           <nav className="col-lg-6 col-12 navbar__collapse">
             <ul className={`navbar__navlist ${lang}`}>
               <li className="nav-item">
-                <a className="nav-link active" href="#home" onClick={clickHandler}>
+                <a
+                  className="nav-link active"
+                  href="#home"
+                  onClick={clickHandler}
+                >
                   {content[lang].nav_home}
                 </a>
               </li>
@@ -96,6 +100,11 @@ const Navbar = ({ lang }) => {
               <li className="nav-item">
                 <a className="nav-link" href="#skills" onClick={clickHandler}>
                   {content[lang].nav_skills}
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#portfolio" onClick={clickHandler}>
+                  {content[lang].nav_portfolio}
                 </a>
               </li>
               <li className="nav-item">

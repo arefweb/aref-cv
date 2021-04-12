@@ -434,6 +434,114 @@ input:checked + .slider:before {
   }
 }
 
+/******************** PORTFOLIO ********************/
+.portfolio{
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  &__header{
+    &-col{
+      display: flex;
+      justify-content: center;
+    }
+    &-title{
+      color: var(--color-violet);
+    }
+  }
+  &__card{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 15.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    &-title{
+      position: absolute;
+      transform: translate(-50%, -120%);
+      left: 50%;
+      top: 50%;
+      color: #fff;
+    }
+    &-image{
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+    &-overlay{
+      background-color: #0009;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+.modal-portfolio{
+  background: rgba(12, 12, 12, 0.555);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__row{
+    height: 80vh;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    position: relative;
+    margin-top: 3.2rem;
+    overflow-y: auto;
+    border-radius: 7px;
+    max-width: 90%;
+  }
+  &__col{
+    margin-top: 20px;
+  }
+  &__img{
+    text-align: center;
+  }
+  &__info{
+    line-height: 1.5;
+    padding-bottom: 1.5rem;
+  }
+  & img{
+    max-height: 50vh;
+    max-width: 31rem;
+    width: 100%;
+    border: 1px solid silver;
+  }
+  & .exit-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline;
+    width: max-content;
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    color: #c86363;
+    &:hover{
+      background-color: silver;
+      cursor: pointer;
+    }
+  }
+  @media (max-width: 768px){
+    .modal-portfolio__row{
+      height: 100vh;
+      margin-top: 4.5rem;
+      max-width: 95%;
+    }
+  }
+}
+
+.guardian, .weather, .tictac{
+  display: none;
+}
 
 /******************** CONTACT FORM ********************/
 .contact-form{

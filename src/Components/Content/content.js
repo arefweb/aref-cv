@@ -30,6 +30,27 @@ const content = {
     nav_about: "About",
     nav_skills: "Skills",
     nav_contact: "Contact",
+    nav_portfolio: "Portfolio",
+    portfolio: "Portfolio",
+    guardian: "Guardian API",
+    technologies: "Used technologies:",
+    features: "Features:",
+    g_1: `Custom designed professional pagination to fetch results based
+                  on clicked page`,
+    g_2: `Blog like behavior with the help of router, where you can open
+                  each post separately`,
+    g_3: `Fetching an API to display its data `,
+    g_4: `Advanced CSS with the help of sass`,
+    tictac: `Tic Tac Toe`,
+    t_1: `This project is a game and its main feature is the complicated
+                  algorithm behind it.`,
+    t_2: `Local storage is used to store users results.`,
+    weather: `Weather App`,
+    w_1: `Utilizes openweathermap API which is a very complicated API so
+                  I had to wrestle a lot with the fetched data to mold it to my
+                  needs.`,
+    w_2: `All dates are handled manually in this project. I made sure
+                  for dates to be converted to Persian dates correctly.`,
   },
   persian: {
     about: "درباره من",
@@ -49,7 +70,23 @@ const content = {
     nav_about: "درباره",
     nav_skills: "مهارت ها",
     nav_contact: "تماس",
+    nav_portfolio: "نمونه کار",
+    portfolio: "نمونه کار",
+    guardian: "گاردین API",
+    technologies: "تکنولوژی های مورد استفاده:",
+    features: "ویژگی ها:",
+    g_1: `صفحه بندی سفارشی شده و حرفه ای برای بازگرداندن اطلاعات با کلیک روی هر صفحه.`,
+    g_2: `رفتار وبلاگ مانند با بهره گیری از router, طوری که میتوانید هر پست را جداگانه باز کنید`,
+    g_3: `بازگرداندن API برای نمایش محتوای آن`,
+    g_4: `CSS حرفه ای با بهره گیری از SASS`,
+    tictac: `دوز بازی`,
+    t_1: `این پروژه یک بازی است و ویژگی اصلی آن الگوریتم پیچیده پشت آن است.`,
+    t_2: `برای ذخیره سازی نتایج بازی کنان از local storage استفاده شده است.`,
+    weather: `اپلیکیشن آب و هوا`,
+    w_1: `این پروژه از openweathermap API استفاده میکند که یک API بسیار پیچیده ای است. بنابراین نیاز بود برای تبدیل به آنچه میخواهم، دیتای بازگشتی را تغییرات بسیاری بدهم.`,
+    w_2: `تمام تاریخ ها در این پروژه به صورت دستی مدیریت شده اند. اطمینان حاصل کردم که تمام تاریخ ها به درستی به تاریخ فارسی تبدیل شوند.`,
   },
 };
+
 
 export default content;
