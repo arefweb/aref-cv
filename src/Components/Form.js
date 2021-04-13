@@ -24,7 +24,7 @@ const Form = ({lang}) => {
       axios({
         method: "post",
         // url: `${process.env.REACT_APP_API}`,
-        url: `/aref-cv/api/index.php`,
+        url: `${process.env.REACT_APP_API}`,
         headers: { "Content-Type": "application/json" },
         data: JSON.stringify(formData),
       })
