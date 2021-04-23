@@ -23,7 +23,6 @@ const Form = ({lang}) => {
       setFormSending(true)
       axios({
         method: "post",
-        // url: `${process.env.REACT_APP_API}`,
         url: `${process.env.REACT_APP_API}`,
         headers: { "Content-Type": "application/json" },
         data: JSON.stringify(formData),
