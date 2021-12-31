@@ -2,22 +2,11 @@
 const content = {
   english: {
     about: "About Me",
-    about_text: `My name is Aref Movahedzadeh. I started my career in IT world
-                with WordPress CMS. With an engineering mindset, studying about
-                the internal mechanisms of WordPress gave me good insight about
-                web as a whole. Now I know about Front-end with all its
-                elegance, a bit about Back-end and Server as well as SEO. But
-                Finally among all these specialties I made up my mind and chose
-                Front-end with a popular framework: React!`,
+    about_text: `My name is Aref Movahedzadeh. I got acquainted with programming since high school and with Visual Basic language. Due to my interest in this field I got acquainted with Web development and always worked with it as a hobby. My professional journey in IT world began with Web design and WordPress CMS. Working in this field made me familiar with all web related specialties including Back-end, Front-end and SEO. Despite my interest in Back-end and enough knowledge in it, I chose Front-end for my career. Since I could create new things every day that never would get repetitive and always had challenges. Plus, I could simulate physics in Front-end. But for building an attractive UI you need a framework and the answer was React. Because it’s so fast, has a vast community and application. `,
     m_skills: "Main Skills",
-    m_skills_text: `Presenting skills as a percentage has always been somewhat
-                difficult for me. Because how do we define 100% in programming
-                or any other skill? Anyways to follow the common practice, I present
-                some of the main skills I gathered throughout my journey.`,
+    m_skills_text: `Learning a new skill in programming is always hard, but is easy to faint away. Because technologies change daily and a skill that was around 90 percent yesterday, falls lower today because of an update. But in my opinion, the main skill of a programmer is being a self-learner. Something that has been my partner since the beginning.`,
     knowledge: "Knowledges",
-    knowledge_text: `As there are plenty of technologies related to front-end
-                development and React, I decided to present them in a separate
-                section. So these are some of the technologies I have used so far:`,
+    knowledge_text: `As there are plenty of technologies related to Front-end development and React, I decided to present them in a separate section. So these are some of my knowledge in Front-end.`,
     contact: "Contacts",
     contact_text: `For Cooperation, Please use this form to contact me`,
     c_form: "contact form",
@@ -50,14 +39,24 @@ const content = {
                   needs.`,
     w_2: `All dates are handled manually in this project. I made sure
                   for dates to be converted to Persian dates correctly.`,
+    cart: `Cart`,
+    cart_1: `This project is a cart for online store, and despite simplicity it’s so useful and has helped me in real projects.`,
+    dashboard: `Dashboard`,
+    dashboard_1: `This project is a complete project that can be turned into a ready theme, with these features:`,
+    dashboard_2: `Dashboard made with Next.js, containing different charts`,
+    dashboard_3: `Instability by utilizing PWA technology`,
+    dashboard_4: `Login/Logout functionality utilizing JWT, which ate first implemented in Node.js then the same codes are running in Next.js `,
+    wordpress: `Next.JS - WordPress`,
+    wordpress_1: `This project utilizes WordPress API to return weblog data. Next.js is used for SSG that caches the data and increases the speed. As a result, UX gets better.`,
+    wordpress_2: `Despite all React benefits, it’s deficient in SEO. But it’s solvable with Next.js`,
   },
   persian: {
     about: "درباره من",
-    about_text: `نام من عارف موحدزاده است. من مسیر حرفه ای خود را در دنیای فناوری اطلاعات با سامانه‌ی مدیریت محتوا‌ی وردپرس شروع کردم. با ذهنیتی مهندسی مطالعه درباره‌ی سازوکار داخلی وردپرس به من دید خوبی درباره‌ی کلیت وب داد. حالا درباره‌ی تمام ریزه کاری های فرانت اند میدانم، همچنین مقداری درباره‌‌ی بک اند و سرور و همچنین سئو. اما درنهایت مابین تمام این تخصص ها تصمیم خود را گرفتم و فرانت اند را به همراه یک فریمورک محبوب انتخاب کردم: ریکت!`,
+    about_text: `نام من عارف موحدزاده است. با برنامه نویسی از دوران دبیرستان و با زبان ویژوال بیسیک آشنا شدم. به دلیل علاقه به این حوزه با برنامه نویسی وب هم آشنا شدم و به عنوان یک تفریح و مهارت جانبی به آن میپرداختم. مسیر حرفه ای من در دنیای فناوری اطلاعات با طراحی وب و سامانه‌ی مدیریت محتوای وردپرس شروع شد. با فعالیت در این زمینه با تمام حوزه های تخصصی وب از جمله بک اند، فرانت اند و سئو آشنا شدم. با وجود علاقه به بک اند و داشتن دانش کافی در آن، برای ادامه‌ی مسیر حرفه ای فرانت اند را انتخاب کردم. چراکه در فرانت اند میتوانستم هرروز چیزهایی جدید خلق کنم و به هیچ وجه تکراری نمیشد و همیشه چالشی برای انجام داشت. ضمن اینکه در فرانت اند میتوانستم فیزیک را شبیه سازی کنم. اما برای ساختن یک رابط کاربری جذاب نیاز به یک فریمورک است که ریکت پاسخ آن بود. چراکه بسیار سریع، دارای جامعه کاربری گسترده و دارای کاربرد گسترده است.`,
     m_skills: "مهارت های اصلی",
-    m_skills_text: `نمایش مهارتها به شکل درصد همیشه به نوعی برایم سخت بوده. چرا که    چگونه میتوان ۱۰۰٪ را در برنامه نویسی یا هر مهارت دیگر تعریف کرد؟ به هر حال به رسم معمول  برخی از مهارتهای اصلی را که در مسیر خود کسب نمودم ارائه میکنم.`,
+    m_skills_text: `کسب مهارت در حوزه برنامه نویسی بسیار سخت، اما کمرنگ شدن آن بسیار ساده است. چراکه تکنولوژی ها هرروز تغییر میکنند و مهارتی که شاید دیروز روی نود درصد بوده امروز با به روز رسانی یک تکنولوژی پایین بیاید. اما به نظر من مهارت اصلی یک برنامه نویس، خودآموز بودن اوست. چیزی که از ابتدای راه یار من بوده است.`,
     knowledge: "دانش ها",
-    knowledge_text: `از آنجا که تکنولوژی های زیادی به توسعه فرانت اند و ریکت مرتبط هستند، تصمیم گرفتم که آنها را در یک بخش جدا معرفی کنم. درنتیجه اینها برخی از تکنولوژی هایی هستند که تا به حال از آنها استفاده کرده‌ام.`,
+    knowledge_text: `از آنجا که تکنولوژی های زیادی به توسعه فرانت اند و ریکت مرتبط هستند، تصمیم گرفتم که آنها را در یک بخش جدا معرفی کنم. درنتیجه اینها برخی از دانش های من در حوزه فرانت اند هستند.`,
     contact: "تماس",
     contact_text: `جهت همکاری لطفا از این فرم برای تماس با بنده استفاده کنید`,
     c_form: "فرم تماس",
@@ -84,6 +83,16 @@ const content = {
     weather: `اپلیکیشن آب و هوا`,
     w_1: `این پروژه از openweathermap API استفاده میکند که یک API بسیار پیچیده ای است. بنابراین نیاز بود برای تبدیل به آنچه میخواهم، دیتای بازگشتی را تغییرات بسیاری بدهم.`,
     w_2: `تمام تاریخ ها در این پروژه به صورت دستی مدیریت شده اند. اطمینان حاصل کردم که تمام تاریخ ها به درستی به تاریخ فارسی تبدیل شوند.`,
+    cart: `سبد خرید`,
+    cart_1: `این پروژه یک سبد خرید برای فروشگاه اینترنتی است و در عین سادگی بسیار کاربردی است و در پروژه های واقعی به کمکم آمده.`,
+    dashboard: `داشبورد`,
+    dashboard_1: `این پروژه تقریبا یک پروژه کامل و قابل تبدیل به یک theme آماده است که دارای ویژگی های زیر می باشد:`,
+    dashboard_2: `داشبورد ساخته شده با Next.js و دارای نمودار و چارت های مختلف`,
+    dashboard_3: `قابلیت نصب روی دستگاه با بهره گیری از تکنولوژی PWA`,
+    dashboard_4: `قابلیت login و logout با استفاده از JWT که ابتدا با Node.js پیاده سازی شد و سپس همان کدها در Next.js کار میکند.`,
+    wordpress: `نکست - وردپرس`,
+    wordpress_1: `این پروژه از API وردپرس استفاده میکند تا داده های وبلاگ را بازگرداند. برای SSG از Next.js استفاده شده که داده های وبلاگ را کش میکند و سرعت بالاتر و در نتیجه تجربه کاربری بهتری ارائه میکند.`,
+    wordpress_2: `ریکت با تمام مزایا اما در بحث سئو دچار مشکل است که این مسئله با استفاده از Next.js قابل حل است.`,
   },
 };
 

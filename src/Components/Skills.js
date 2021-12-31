@@ -10,6 +10,13 @@ import {
   FaPhp,
   FaDatabase,
 } from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiJquery,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+} from "react-icons/si";
 
 const Skills = ({ lang }) => {
   return (
@@ -60,7 +67,7 @@ const Skills = ({ lang }) => {
                 <h4>
                   <FaJsSquare className="skill__icon" /> JavaScript (ES6+)
                 </h4>
-                <span>85%</span>
+                <span>90%</span>
               </div>
               <div className="skill__bar">
                 <div className="skill__bar-percentage skill-4"></div>
@@ -68,9 +75,9 @@ const Skills = ({ lang }) => {
               {/* skill 5*/}
               <div className="skill__info">
                 <h4>
-                  <FaReact className="skill__icon" /> ReactJs
+                  <FaReact className="skill__icon" /> React Js
                 </h4>
-                <span>85%</span>
+                <span>90%</span>
               </div>
               <div className="skill__bar">
                 <div className="skill__bar-percentage skill-5"></div>
@@ -78,7 +85,7 @@ const Skills = ({ lang }) => {
               {/* skill 6*/}
               <div className="skill__info">
                 <h4>
-                  <FaJsSquare className="skill__icon" /> jQuery
+                  <SiJquery className="skill__icon" /> jQuery
                 </h4>
                 <span>85%</span>
               </div>
@@ -90,7 +97,7 @@ const Skills = ({ lang }) => {
                 <h4>
                   <FaPhp className="skill__icon" /> PHP
                 </h4>
-                <span>80%</span>
+                <span>60%</span>
               </div>
               <div className="skill__bar">
                 <div className="skill__bar-percentage skill-7"></div>
@@ -100,10 +107,50 @@ const Skills = ({ lang }) => {
                 <h4>
                   <FaDatabase className="skill__icon" /> MySQL
                 </h4>
-                <span>80%</span>
+                <span>60%</span>
               </div>
               <div className="skill__bar">
                 <div className="skill__bar-percentage skill-8"></div>
+              </div>
+              {/* skill 9*/}
+              <div className="skill__info">
+                <h4>
+                  <SiNextdotjs className="skill__icon" /> Next JS
+                </h4>
+                <span>90%</span>
+              </div>
+              <div className="skill__bar">
+                <div className="skill__bar-percentage skill-9"></div>
+              </div>
+              {/* skill 10*/}
+              <div className="skill__info">
+                <h4>
+                  <SiNodedotjs className="skill__icon" /> Node JS
+                </h4>
+                <span>60%</span>
+              </div>
+              <div className="skill__bar">
+                <div className="skill__bar-percentage skill-10"></div>
+              </div>
+              {/* skill 11*/}
+              <div className="skill__info">
+                <h4>
+                  <SiExpress className="skill__icon" /> Express JS
+                </h4>
+                <span>60%</span>
+              </div>
+              <div className="skill__bar">
+                <div className="skill__bar-percentage skill-11"></div>
+              </div>
+              {/* skill 12*/}
+              <div className="skill__info">
+                <h4>
+                  <SiMongodb className="skill__icon" /> MongoDB
+                </h4>
+                <span>50%</span>
+              </div>
+              <div className="skill__bar">
+                <div className="skill__bar-percentage skill-12"></div>
               </div>
             </aside>
           </div>
@@ -121,10 +168,12 @@ const Skills = ({ lang }) => {
               <section className="knowledge__info">
                 <h4 className="knowledge__info-title">Front-End</h4>
                 <ul className="knowledge__info-tags">
-                  <li>SASS Preprocessor </li>
+                  <li>PWA</li>
+                  <li>SASS</li>
                   <li>UX</li>
                   <li>Responsive Design</li>
                   <li>PhotoShop</li>
+                  <li>Adobe XD</li>
                 </ul>
               </section>
               <section className="knowledge__info">
@@ -132,17 +181,24 @@ const Skills = ({ lang }) => {
                 <ul className="knowledge__info-tags">
                   <li>React Hooks </li>
                   <li>Redux </li>
-                  <li>Context API &amp; Reducer </li>
+                  <li>Redux Toolkit</li>
+                  <li>Redux Thunk</li>
+                  <li>Context API </li>
                   <li>Restful API </li>
                   <li>axios</li>
+                  <li>Material-UI</li>
+                  <li>Styled Components</li>
                   <li>Performance Optimization</li>
                 </ul>
               </section>
               <section className="knowledge__info">
-                <h4 className="knowledge__info-title">Project management</h4>
+                <h4 className="knowledge__info-title">Other</h4>
                 <ul className="knowledge__info-tags">
+                  <li>WebSocket &amp; Socket.io</li>
+                  <li>JWT</li>
+                  <li>TypeScript</li>
                   <li>Scrum</li>
-                  <li>Git &amp; GitHub </li>
+                  <li>GitHub &amp; GitLab </li>
                 </ul>
               </section>
             </aside>

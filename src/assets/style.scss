@@ -313,6 +313,9 @@ input:checked + .slider:before {
         color: var(--color-violet);
         font-size: var(--font-size-title);
       }
+      & p{
+        text-align: justify;
+      }
     }
   }
 }
@@ -389,19 +392,31 @@ input:checked + .slider:before {
     width: 90%;
   }
   .skill-4{
-    width: 85%;
+    width: 90%;
   }
   .skill-5{
-    width: 85%;
+    width: 90%;
   }
   .skill-6{
     width: 85%;
   }
   .skill-7{
-    width: 80%;
+    width: 60%;
   }
   .skill-8{
-    width: 80%;
+    width: 60%;
+  }
+  .skill-9{
+    width: 90%;
+  }
+  .skill-10{
+    width: 60%;
+  }
+  .skill-11{
+    width: 60%;
+  }
+  .skill-12{
+    width: 50%;
   }
 }
 
@@ -539,7 +554,7 @@ input:checked + .slider:before {
   }
 }
 
-.guardian, .weather, .tictac{
+.guardian, .weather, .tictac, .cart, .wordpress, .dashboard{
   display: none;
 }
 

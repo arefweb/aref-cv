@@ -3,6 +3,7 @@ import Toggle from "./Toggle";
 import { FaBars } from "react-icons/fa";
 import { connect } from "react-redux";
 import content from "./Content/content";
+import { FaHome } from "react-icons/fa";
 
 const Navbar = ({ lang }) => {
   // Changing nav background-color on scroll
@@ -63,7 +64,7 @@ const Navbar = ({ lang }) => {
   // smooth scroll to clicked section
   const clickHandler = (e) => {
     e.preventDefault();
-    const href = e.target.getAttribute("href");
+    const href = e.currentTarget.getAttribute("href");
     const offsetTop = document.querySelector(href).offsetTop - 50;
     window.scroll({
       top: offsetTop,
@@ -89,7 +90,8 @@ const Navbar = ({ lang }) => {
                   href="#home"
                   onClick={clickHandler}
                 >
-                  {content[lang].nav_home}
+                  {/* {content[lang].nav_home} */}
+                  <FaHome/>
                 </a>
               </li>
               <li className="nav-item">

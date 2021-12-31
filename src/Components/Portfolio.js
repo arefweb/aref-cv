@@ -4,6 +4,9 @@ import content from "./Content/content";
 import GuardianImg from "../assets/images/Guardian-API.png";
 import TicTacToe from "../assets/images/TicTacToe.png";
 import WeatherAPI from "../assets/images/weather.png";
+import CartImg from "../assets/images/cart.png";
+import DashboardImg from "../assets/images/dashboard.png";
+import WordpressImg from "../assets/images/wordpress.png";
 
 const Portfolio = ({ lang }) => {
   const handleClick = (e) => {
@@ -15,6 +18,15 @@ const Portfolio = ({ lang }) => {
     }
     if (e.currentTarget.id == "weather") {
       document.querySelector(".weather").style.display = "flex";
+    }
+    if (e.currentTarget.id == "cart") {
+      document.querySelector(".cart").style.display = "flex";
+    }
+    if (e.currentTarget.id == "dashboard") {
+      document.querySelector(".dashboard").style.display = "flex";
+    }
+    if (e.currentTarget.id == "wordpress") {
+      document.querySelector(".wordpress").style.display = "flex";
     }
   };
 
@@ -34,6 +46,21 @@ const Portfolio = ({ lang }) => {
     ) {
       document.querySelector(".weather").style.display = "none";
     }
+    if (
+      e.currentTarget.parentElement.parentElement.classList.contains("cart")
+    ) {
+      document.querySelector(".cart").style.display = "none";
+    }
+    if (
+      e.currentTarget.parentElement.parentElement.classList.contains("dashboard")
+    ) {
+      document.querySelector(".dashboard").style.display = "none";
+    }
+    if (
+      e.currentTarget.parentElement.parentElement.classList.contains("wordpress")
+    ) {
+      document.querySelector(".wordpress").style.display = "none";
+    }
   };
 
   return (
@@ -47,6 +74,28 @@ const Portfolio = ({ lang }) => {
           </div>
         </div>
         <div className="row">
+          <div className="col-md-4 portfolio__col">
+            <article
+              id="dashboard"
+              className="portfolio__card"
+              onClick={handleClick}
+            >
+              <div className="portfolio__card-overlay"></div>
+              <h3 className="portfolio__card-title">Dashboard</h3>
+              <img src={DashboardImg} className="portfolio__card-image" />
+            </article>
+          </div>
+          <div className="col-md-4 portfolio__col">
+            <article
+              id="wordpress"
+              className="portfolio__card"
+              onClick={handleClick}
+            >
+              <div className="portfolio__card-overlay"></div>
+              <h3 className="portfolio__card-title">Next Wordpress</h3>
+              <img src={WordpressImg} className="portfolio__card-image" />
+            </article>
+          </div>
           <div className="col-md-4 portfolio__col">
             <article
               id="guardian"
@@ -80,8 +129,102 @@ const Portfolio = ({ lang }) => {
               <img src={WeatherAPI} className="portfolio__card-image" />
             </article>
           </div>
+
+          <div className="col-md-4 portfolio__col">
+            <article
+              id="cart"
+              className="portfolio__card"
+              onClick={handleClick}
+            >
+              <div className="portfolio__card-overlay"></div>
+              <h3 className="portfolio__card-title">Cart</h3>
+              <img src={CartImg} className="portfolio__card-image" />
+            </article>
+          </div>
         </div>
       </div>
+
+      {/* Modal Dashboard */}
+      <div className="modal-portfolio dashboard">
+        <div className="row modal-portfolio__row">
+          <button className="exit-btn" onClick={handleClose}>
+            {" "}
+            &times;{" "}
+          </button>
+          <div className="col-md-6 modal-portfolio__col">
+            <div className="modal-portfolio__img">
+              <img src={DashboardImg} />
+            </div>
+          </div>
+          <div className="col-md-6">
+            <article className={`modal-portfolio__info ${lang}`}>
+              <h2>{content[lang].dashboard}</h2>
+              <a
+                href="https://aref-next-admin.vercel.app"
+                target="_blank"
+                noopener="true"
+              >
+                Link
+              </a>
+              <i> </i>
+              <a href="https://github.com/arefweb/next-admin" target="_blank">
+                Github
+              </a>
+              <h4>{content[lang].technologies}</h4>
+              <p>Next.js - React - PWA - JWT </p>
+              <h3>{content[lang].features}</h3>
+              <ul>
+                <li>{content[lang].dashboard_1}</li>
+                <li>{content[lang].dashboard_2}</li>
+                <li>{content[lang].dashboard_3}</li>
+                <li>{content[lang].dashboard_4}</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      {/* Modal Wordpress */}
+      <div className="modal-portfolio wordpress">
+        <div className="row modal-portfolio__row">
+          <button className="exit-btn" onClick={handleClose}>
+            {" "}
+            &times;{" "}
+          </button>
+          <div className="col-md-6 modal-portfolio__col">
+            <div className="modal-portfolio__img">
+              <img src={WordpressImg} />
+            </div>
+          </div>
+          <div className="col-md-6">
+            <article className={`modal-portfolio__info ${lang}`}>
+              <h2>{content[lang].wordpress}</h2>
+              <a
+                href="https://next-wordpress-crypto.vercel.app"
+                target="_blank"
+                noopener="true"
+              >
+                Link
+              </a>
+              <i> </i>
+              <a
+                href="https://github.com/arefweb/next-wordpress"
+                target="_blank"
+              >
+                Github
+              </a>
+              <h4>{content[lang].technologies}</h4>
+              <p>Next.js - React - WordPress API </p>
+              <h3>{content[lang].features}</h3>
+              <ul>
+                <li>{content[lang].wordpress_1}</li>
+                <li>{content[lang].wordpress_2}</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+
       {/* Modal Guardian */}
       <div className="modal-portfolio guardian">
         <div className="row modal-portfolio__row">
@@ -186,6 +329,41 @@ const Portfolio = ({ lang }) => {
               <ul>
                 <li>{content[lang].w_1}</li>
                 <li>{content[lang].w_2}</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      {/* Modal cart */}
+      <div className="modal-portfolio cart">
+        <div className="row modal-portfolio__row">
+          <button className="exit-btn" onClick={handleClose}>
+            {" "}
+            &times;{" "}
+          </button>
+          <div className="col-md-6 modal-portfolio__col">
+            <div className="modal-portfolio__img">
+              <img src={CartImg} />
+            </div>
+          </div>
+          <div className="col-md-6">
+            <article className={`modal-portfolio__info ${lang}`}>
+              <h2>{content[lang].cart}</h2>
+              <a
+                href="https://forooshgah.netlify.app/"
+                target="_blank"
+                noopener="true"
+              >
+                Link
+              </a>
+              <i> </i>
+              <a href="https://github.com/arefweb/forooshgah">Github</a>
+              <h4>{content[lang].technologies}</h4>
+              <p>React – Redux …</p>
+              <h3>{content[lang].features}</h3>
+              <ul>
+                <li>{content[lang].cart_1}</li>
               </ul>
             </article>
           </div>
